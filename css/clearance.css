@@ -1,0 +1,356 @@
+//* GLOBAL */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f5f7;
+}
+
+/* TOP NAVIGATION */
+.top-nav {
+    background: #0a2a63;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #052964;
+    padding: 0px 20px;
+}
+
+.top-nav ul {
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.top-nav li {
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.top-nav .active {
+    color: white;
+    background: #1a4db3;
+    padding: 6px 14px;
+    border-radius: 5px;
+}
+
+.logo-box {
+    font-size: 28px;
+    color: #1a4db3;
+}
+
+/* PAGE LAYOUT */
+.page-container {
+    display: flex;
+    bottom: 50;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 240px;
+    background: #355274;
+    padding: 20px;
+    color: white;
+    border-radius: 0px;
+    margin-right: 60;
+}
+
+.profile-box {
+    background: #2d445f;
+    padding: 30px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    background: url('https://via.placeholder.com/120') center/cover;
+    margin: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.logout-btn {
+    margin-top: 350px;
+    width: 100%;
+    padding: 10px;
+    background: #23364a;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.logout-btn i {
+    margin-right: 5px;
+}
+
+/* MAIN CONTENT */
+.content {
+    background: white;
+    flex: 1;
+    padding: 30px;
+    margin: 0 20px;
+    border-radius: 5px;
+}
+
+.title {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.clearance-box {
+    border: 2px solid #07357a;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.period {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* CLEARANCE LIST */
+.clearance-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.status {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.cleared {
+    color: #0513db;
+}
+
+.pending {
+    color: #d47300;
+}
+
+.overall {
+    margin-top: 15px;
+    text-align: right;
+}
+
+.not-cleared {
+    color: red;
+    font-weight: bold;
+}
+
+/* PRINT BUTTON */
+.print-btn {
+    margin-top:290px;
+    background: #1a4db3;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 0%;
+}
+
+.print-btn i {
+    margin-right: 5px;
+}
+
+.menu .active {
+    font-weight: bold;
+    padding: 10px 12px;
+    background: #1f4ead;
+    border-radius: 6px;
+}
+
+.logo-box img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    
+}
+
+
+/* Avatar container */
+.avatar {
+    width: 150px;                /* set width */
+    height: 150px;               /* set height */
+    margin: 0 auto;             /* center horizontally */
+    border-radius: 10%;         /* make circular */
+    overflow: hidden;           /* crop excess image */
+}
+
+/* Image inside avatar */
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;          /* ensure it covers the circle */
+}
+
+//* Container for logo + title */
+.title-box {
+    display: flex;              /* put logo and text side by side */
+    align-items: center;        /* vertically align them */
+    gap: 10px;                  /* space between logo and text */
+    margin-bottom: 20px;
+}
+
+/* Logo box */
+.title-box .logo-box {
+    width: 50px;                /* logo size */
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Logo image */
+.title-box .logo-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;        /* fit nicely without stretching */
+}
+
+/* Title box containing logo and text */
+.title-box {
+    display: flex;            /* place items side by side */
+    align-items: center;      /* vertically center the logo with text */
+    gap: 10px;                /* space between logo and text */
+    margin-bottom: 20px;      /* optional spacing below */
+}
+
+/* Logo image */
+.logo-img {
+    width: 50px;              /* set logo width */
+    height: 50px;             /* set logo height */
+    object-fit: contain;      /* maintain proportions */
+}
+
+/* Title text */
+.title {
+    font-size: 24px;
+    margin: 0; 
+                   /* remove default h2 margin */
+}
+.top-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.top-nav li {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+/* Make icons white only */
+.top-nav li i {
+    color: rgb(252, 245, 245);        /* icon color */
+    margin-right: 8px;   /* spacing between icon and text */
+}
+
+/* Optional: style active menu item */
+.top-nav li.active i {
+    color: white;       /* highlight active icon differently */
+}
+
+.overall-left {
+    float: left;          /* align left */
+    font-weight: bold;
+    color: #56708a;
+    margin-top: 10px;
+}
+
+/* Right block */
+.overall-right {
+    float: right;         /* align right */
+    font-weight: bold;
+    color: red;
+    margin-top: 10px;
+}
+
+/* Clear any floats */
+.overall-left, .overall-right {
+    margin-top: 10px;
+}
+
+/* Print button container aligned right */
+.print-container {
+    text-align: left;    /* aligns the button to the right */
+    clear: both;          /* ensures it's below floated/inline elements */
+    margin-top: 20px;     /* spacing above button */
+}
+
+/* Print button styling */
+.print-btn {
+    background: #1a4db3;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.print-btn i {
+    margin-right: 5px;
+}
+
+.top-nav li {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 15px;
+    color: white;           /* set all menu text to white */
+}
+
+/* Icon color matches text */
+.top-nav li i {
+    color: white;           /* icon same color as text */
+    margin-right: 8px;
+}
+
+/* Active menu item background and text */
+.top-nav li.active {
+    background: #1a4db3;    /* darker blue background */
+    color: white;           /* text stays white */
+    border-radius: 5px;
+    padding: 6px 14px;
+}
+
+/* Optional: Hover effect for all menu items */
+.top-nav li:hover {
+    background: #224b8f;
+    color: white;           
+}
+    .logo-box {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px; 
+}
+
+.logo-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
